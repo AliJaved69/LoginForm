@@ -6,6 +6,10 @@ p{
 }
 
 body{
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,12 +17,12 @@ body{
 }
 
 .form{
-    outline-style: solid;
-    outline-color: white;
-    outline-width: 1px;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
     width: 400px;
     height: 440px;
-    background-color: seagreen;
+    background-color: transparent;
 }
 
 .login-head{
@@ -34,15 +38,18 @@ body{
     font-family: "Concert One";
     color: white;
     font-size: 25px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
 .email-icon{
   position: absolute;
-  right: 470px;
-  transform: translateY(-128%);
-  padding-left: 5px;
+  right: 10px;
+  transform: translateY(-108%);
+  border: 1px solid;
+  height: 30px;
+  background-color: white;
+  border-radius: 12px;
 }
 
 .emailbox{
@@ -52,7 +59,7 @@ body{
   margin-left: 7px;
   border: none;
   border-radius: 15px;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .password{
@@ -70,17 +77,35 @@ body{
   margin-left: 7px;
   border: none;
   border-radius: 15px;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .password-icon{
   position: absolute;
-  right: 470px;
-  transform: translateY(-128%);
-  padding-left: 5px;
+  right: 10px;
+  transform: translateY(-108%);
+  border: 1px solid;
+  height: 30px;
+  background-color: white;
+  border-radius: 12px;
 }
 
 .forgotpassword{
-  margin-top: 30px;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.login-button{
   align-items: center;
+  width: 380px;
+  height: 35px;
+  margin-left: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
 }
