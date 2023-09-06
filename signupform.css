@@ -93,8 +93,8 @@ p{
     margin-left: 30px;
   }
   
-  .login-button{
-    font-family: "Patrick Hand";
+  .signup-button{
+      font-family: "Patrick Hand";
       font-size: 19px;
       font-weight: bold;
       border: none;
