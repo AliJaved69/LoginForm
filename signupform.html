@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <form action="saveinfo.php" action = "post">
+            <form action="signup.php" action = "post">
                 <div class="signup-head">
                     <label>Sign Up</label>
                 </div>
@@ -21,7 +21,8 @@
                     <input type="text" placeholder="Enter Email-Address" name="email" class="email-address-box"><br>
                 </div>
                 <div class="password">
-                    <input type="text" placeholder="Password" name="password" class="passwordbox"><br>
+                    <input type="password" placeholder="Password" name="password" maxlength="16" class="passwordbox"><br>
+                    <label class="password-label">Password must contain 8 to 16 letters</label>
                 </div>
                 <input type="submit" value="Sign Up" name="login-btn" class="login-button"> 
             </form>

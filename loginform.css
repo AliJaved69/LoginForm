@@ -53,6 +53,8 @@ body{
 }
 
 .emailbox{
+  font-family: "Patrick Hand";
+  font-size: 17px;
   align-items: center;
   width: 380px;
   height: 35px;
@@ -71,6 +73,8 @@ body{
 }
 
 .passwordbox{
+  font-family: "Patrick Hand";
+  font-size: 17px;
   align-items: center;
   width: 380px;
   height: 35px;

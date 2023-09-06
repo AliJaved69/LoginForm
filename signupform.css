@@ -74,7 +74,7 @@ p{
   }
   
   .passwordbox{
-    font-family: "Patrick Hand";
+      font-family: "Patrick Hand";
       font-size: 17px;
       border: none;
       border-radius: 15px;
@@ -83,6 +83,14 @@ p{
       width: 383px;
       margin-top: 15px;
       margin-left: 28px;
+  }
+
+  .password-label{
+    font-family: "Patrick Hand";
+    font-size: 17px;
+    color: rgb(209, 209, 209);
+    justify-content: left;
+    margin-left: 30px;
   }
   
   .login-button{
@@ -93,7 +101,7 @@ p{
       border-radius: 15px;
       padding-left: 7px;
       height: 35px;
-      width: 383px;
+      width: 390px;
       margin-top: 45px;
       margin-left: 28px;
   }
