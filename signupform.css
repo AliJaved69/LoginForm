@@ -1,0 +1,99 @@
+p{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;  
+  }
+  
+  body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .wrapper{
+      border: 2px solid rgba(255,255,255, .2);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      width: 450px;
+      height: 430px;
+      background-color: transparent;
+  }
+  
+  .signup-head{
+      text-align: center;
+      font-family: "Patrick Hand";
+      color: white;
+      font-size: 55px;
+      margin-top: 5px;
+  }
+  
+  .name{
+    display: inline-block;
+    margin-top: 55px;
+    justify-content: center;
+  }
+
+  .fname-box{
+    font-family: "Patrick Hand";
+    border: none;
+    border-radius: 15px;
+    padding-left: 7px;
+    height: 35px;
+    width: 170px;
+    font-size: 17px;
+    margin-left: 29px;
+  }
+
+  .lname-box{
+    font-family: "Patrick Hand";
+    border: none;
+    border-radius: 15px;
+    padding-left: 7px;
+    height: 35px;
+    width: 170px;
+    font-size: 17px;
+    margin-left: 30px;
+  }
+
+  .email-address-box{
+      font-family: "Patrick Hand";
+      font-size: 17px;
+      border: none;
+      border-radius: 15px;
+      padding-left: 7px;
+      height: 35px;
+      width: 383px;
+      margin-top: 15px;
+      margin-left: 28px;
+  }
+  
+  .passwordbox{
+    font-family: "Patrick Hand";
+      font-size: 17px;
+      border: none;
+      border-radius: 15px;
+      padding-left: 7px;
+      height: 35px;
+      width: 383px;
+      margin-top: 15px;
+      margin-left: 28px;
+  }
+  
+  .login-button{
+    font-family: "Patrick Hand";
+      font-size: 19px;
+      font-weight: bold;
+      border: none;
+      border-radius: 15px;
+      padding-left: 7px;
+      height: 35px;
+      width: 383px;
+      margin-top: 45px;
+      margin-left: 28px;
+  }
