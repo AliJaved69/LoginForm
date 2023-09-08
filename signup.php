@@ -16,7 +16,7 @@ if(isset($_POST["signup-btn"])){
 $sql = "INSERT INTO login_info (First_Name,Last_Name,Emails,Passwords)
       VALUES ('$fname', '$lname', '$email', '$password');";
 if($conn->query($sql) === TRUE){
-  header ("Location: loginform.html");
+  header("Location: loginform.php");
 }
 
 ?>
