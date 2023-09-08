@@ -22,10 +22,9 @@ if(isset($_POST["signup"])){
 
 $sql = "INSERT INTO login_info (First_Name,Last_Name,Emails,Passwords)
         VALUES ('$fname', '$lname', '$email', '$password');";
+        
 if($conn->query($sql) === TRUE){
-  include "loginform.html";
+  header ("Location: loginform.html");
 }
 
-if(empty($fname) || empty($lname) || $empty($email) || empty($password)){ 
-}
 ?>
