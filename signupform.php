@@ -12,6 +12,18 @@
                 <div class="signup-head">
                     <label>Sign Up</label>
                 </div>
+                <div>
+                <?php
+                    if (isset($_POST["error"])) {
+                        $errorMessage = $_POST["error"];
+                        echo '<label style="display: flex;
+                                            color: red;
+                                            font-family: \'Patrick Hand\';
+                                            font-size: 17px;
+                                            margin-top: 30px;" >' . $errorMessage . '</label>';
+                    }
+                    ?>
+                </div>
                 <div class="name">
                     <input type="text" placeholder="First Name" name="fname" class="fname-box" required>
                     <input type="text" placeholder="Last Name" name="lname" class="lname-box" required>
@@ -20,7 +32,7 @@
                     <input type="text" placeholder="Enter Email-Address" name="email" class="email-address-box" required><br>
                 </div>
                 <div class="password">
-                    <input type="password" placeholder="Password" name="password" required pattern=".{8,}" class="passwordbox"><br>
+                    <input type="password" placeholder="Password" name="password" required pattern=".{8,16}" maxlength="16" class="passwordbox"><br>
                     <label class="password-label">Password must contain 8 to 16 letters</label>
                 </div>
                 <input type="submit" value="Sign Up" name="signup-btn" class="signup-button"> 

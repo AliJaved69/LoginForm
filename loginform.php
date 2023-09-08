@@ -23,8 +23,7 @@
                                             color: red;
                                             font-family: \'Patrick Hand\';
                                             font-size: 17px;
-                                            margin-top: 30px;" >' . $errorMessage . '</label>';
-;
+                                            margin-top: 20px;" >' . $errorMessage . '</label>';
                     }
                     ?>
                 </div>
@@ -38,7 +37,7 @@
                     <input type="password" name="password" placeholder="Password" required pattern=".{8,}" class="passwordbox" ><br>
                     <img class="password-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAR1JREFUSEvV1LFKxEAQxvHf+QpiIVaCKGjlK2hxPoBYWdoIVmKnhaKgcIWVvoMgWCtq4QPYKVhoaSWWdqIsbOAuJLdJMBxuNSQz339mZ3Y6Wj6dlvVVBaxiE0sxoTuc4SqVYBVADzslQvs4GAZJAdZwEQUOcR7tLexGu4ubMkgK8IhFbOM0JxIAR7jGSlPAN8YwgY+cyCTe8YnxpoCfGJiqtLQNqcD/CQgzH5o3l5rx3P8X7OGy/3vRFT1hvqZ45v6MhRQgu/eGjMHtUFTByAAP2MAXTrBeUuJA0nUqmMFrFJ1FaGrRaQyYii83iE7j7a8B91iOord9dp7TuIIglAUPG4TRA1p/aGFVHCNMTZ1TeVXUEU36ptZ1UiDl8Au/9DEZm/1ElAAAAABJRU5ErkJggg=="/>
                 </div>
-                <a class="signup" href="signupform.html">Sign Up Here</a> <br>
+                <a class="signup" href="signupform.php">Sign Up Here</a> <br>
                 <input type="submit" value="Log In" name="login-btn" class="login-button" > 
             </form>
         </div>

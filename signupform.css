@@ -35,8 +35,8 @@ p{
   
   .name{
     display: inline-block;
-    margin-top: 55px;
     justify-content: center;
+    margin-top: 30px;
   }
 
   .fname-box{
