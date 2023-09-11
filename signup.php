@@ -1,11 +1,7 @@
 <?php
 include "connection.php";
 
-global $fname;
-global $lname;
-global $email; 
-global $password;
-global $sql;
+global $fname,$lname,$email,$password,$sql;
 
 if(isset($_POST["signup-btn"])){
   $fname =$_POST['fname'];
@@ -13,7 +9,7 @@ if(isset($_POST["signup-btn"])){
   $email =$_POST['email'];
   $password = $_POST['password'];
 
-  if(!preg_match("/^[a-zA-Z-' ]*$/",$fname) || !preg_match("/^[a-zA-Z-' ]*$/",$lname) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  if(!preg_match("/^[a-zA-Z]*$/", $fname) || !preg_match("/^[a-zA-Z]*$/", $lname) || filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $errorMessage = "Invalid Format";
     header("Location: signupform.php?error=" . urlencode($errorMessage));
   }

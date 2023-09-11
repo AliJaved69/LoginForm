@@ -13,14 +13,15 @@
                     <label>Sign Up</label>
                 </div>
                 <div>
-                <?php
-                    if (isset($_POST["error"])) {
-                        $errorMessage = $_POST["error"];
+                    <?php
+                    if (isset($_GET["error"])) {
+                        $errorMessage = $_GET["error"];
                         echo '<label style="display: flex;
                                             color: red;
                                             font-family: \'Patrick Hand\';
-                                            font-size: 17px;
-                                            margin-top: 30px;" >' . $errorMessage . '</label>';
+                                            font-size: 25px;
+                                            margin-left: 29px;
+                                            margin-top: 20px;" >' . $errorMessage . '</label>';
                     }
                     ?>
                 </div>
