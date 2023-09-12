@@ -9,10 +9,16 @@ if(isset($_POST["signup-btn"])){
   $email =$_POST['email'];
   $password = $_POST['password'];
 
-  if(!preg_match("/^[a-zA-Z]*$/", $fname) || !preg_match("/^[a-zA-Z]*$/", $lname) || filter_var($email, FILTER_VALIDATE_EMAIL)) {       //checking the format of first name,last name and email
+  $errorMessage = "";
+
+  if (preg_match("/^[a-zA-Z]*$/", $fname) && preg_match("/^[a-zA-Z]*$/", $lname) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    header("Location: loginform.php");
+  } else {
     $errorMessage = "Invalid Format";
     header("Location: signupform.php?error=" . urlencode($errorMessage));
+    exit(); 
   }
+  
 }
 $enc_password = password_hash($password, PASSWORD_DEFAULT);       //encrypting password
 
