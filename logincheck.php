@@ -26,7 +26,5 @@ if($verify){
   exit();
 }
 
-
-
 $conn->close();
 ?>
